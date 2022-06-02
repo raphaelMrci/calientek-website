@@ -22,6 +22,10 @@ style.
         list-style: none;
     }
 
+    .logo {
+        align: center;
+    }
+
     .navbar {
         display: flex;
         align-items: center;
@@ -109,18 +113,18 @@ nav(class="navbar navbar-expand-lg navbar-light")
     ul.nav-links
         .menu
             li
-                a(href="#") Evénements
+                a(href="#events") Evénements
             li
-                a(href="#") Boutique
+                a(href="#shop") Boutique
             li.clubs
-                a(href="#") Clubs
+                a(href="#clubs") Clubs
                 ul.dropdown
                     li
-                        a(href="#") BDS
+                        a(href="#clubs") BDS
             li
-                a(href="#") Partenaires
+                a(href="#partners") Partenaires
             li
-                a(href="#") Contact
+                a(href="#contact") Contact
 
     div.account
         if (isLoggedIn)
@@ -128,3 +132,5 @@ nav(class="navbar navbar-expand-lg navbar-light")
         else
             a(href="/login") Connexion
             a(href="/register") Inscription
+
+//- Code written by RaphaelMrci
