@@ -1,10 +1,5 @@
 style.
 
-    @font-face {
-        font-family: "my inter";
-        src: "/public/fonts/inter/Inter-Light.ttf" format("truetype");
-    }
-
     * {
         margin: 0;
         padding: 0;
@@ -98,11 +93,16 @@ style.
         cursor: pointer;
     }
 
-    .account a {
+    a.log-btn {
         padding: 0.5em;
         border-radius: 5px;
         background-color: #FBA00F;
         color: #fff;
+        margin: 0 0.5em;
+    }
+
+    img#acc-settings {
+        height : 50px;
         margin: 0 0.5em;
     }
 
@@ -128,9 +128,11 @@ nav(class="navbar navbar-expand-lg navbar-light")
 
     div.account
         if (isLoggedIn)
-            //- TODO : Ajouter un bouton pour se déconnecter
+            a(href="/settings")
+                img#acc-settings(src="/public/images/profile.png", alt="user profile")
+
         else
-            a(href="/login") Connexion
-            a(href="/register") Inscription
+            a.log-btn(href="/login") Connexion
+            a.log-btn(href="/register") Inscription
 
 //- Code written by RaphaelMrci

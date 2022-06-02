@@ -15,25 +15,27 @@ style.
         top: -80%;
         left: 60%;
         transform: translate(-50%, -50%);
-        height: 80%;
+        height: 110%;
     }
 
-    h1 {
-        position: relative;
-        top: -60%;
-        left: 60%;
-        transform: translate(-50%, -50%);
+    #home h1 {
         font-size: 3em;
         color: #fff;
     }
 
-    h2 {
-        position: relative;
-        top: -60%;
-        left: 60%;
-        transform: translate(-50%, -50%);
+    #home h2 {
         font-size: 1.5em;
         color: #fff;
+    }
+
+    div#slogan {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: -68%;
+        left: 22.5%;
+        width: fit-content;
+        height: fit-content;
+        justify-content: left;
     }
 
     .yellow-text {
@@ -42,11 +44,12 @@ style.
 
 #home
     img#home-bg(src="/public/home-header.png", alt="header")
-    h1
-        span.yellow-text BDE
-        |  CALIEN'TEK
-    h2 Et ce n'est que le
-        span.yellow-text  début...
+    div#slogan
+        h1
+            span.yellow-text BDE
+            |  CALIEN'TEK
+        h2 Et ce n'est que le
+            span.yellow-text  début...
     img#home-logo(src="/public/logo.png", alt="logo")
 
 //- Code written by RaphaelMrci

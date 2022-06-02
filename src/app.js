@@ -8,7 +8,7 @@ app.use("/public", express.static(path.join(__dirname, "../public")));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
-app.get("/", (req, res) => res.render("index"));
+app.get("/", (req, res) => res.render("index", { isLoggedIn: false }));
 
 app.get("/login", (req, res) => res.send("Coming soon..."));
 app.get("/register", (req, res) => res.send("Coming soon..."));
